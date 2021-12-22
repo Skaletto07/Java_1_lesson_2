@@ -3,10 +3,12 @@ package ru.geekbrains.lesson2;
 public class HomeWorkAppTwo {
     public static void main(String[] args) {
 
-        check(5,6);
+        System.out.println(check(5,6));
         comparison(5);
-        comparisonboolean(4);
+        System.out.println(compare(4));
         printTextNTimes("Moscow",5);
+        System.out.println(years(2024));
+
 
     }
 
@@ -25,7 +27,7 @@ public class HomeWorkAppTwo {
             System.out.println("Ввведенное число - Отрицательное");
         }}
 
-        public static boolean comparisonboolean (int a) {
+        public static boolean compare(int a) {
 
         if (a < 0) {
             return true;
@@ -38,6 +40,18 @@ public class HomeWorkAppTwo {
             System.out.println(word);
         }}
 
+
+        public static boolean years (int a) {
+        if (a % 4 == 0) {
+            if (a % 400 == 0){
+                return true;
+                } else if (a % 100 == 0) {
+                return false;
+               } else {
+                return true;
+              }} else {
+            return false;
+            }}
 
 
       }
